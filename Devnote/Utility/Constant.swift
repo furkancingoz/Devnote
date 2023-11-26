@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 //MARK: - FORMATTER
@@ -18,7 +19,9 @@ import Foundation
 
 
 //MARK: - UI
-
+var backgroundGradient : LinearGradient {
+  return LinearGradient(gradient: Gradient(colors: [Color.pink, Color.blue]), startPoint:.topLeading, endPoint:.bottomTrailing)
+}
 
 
 //MARK: - UX
