@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65CD835D2B136A8D00C192D5 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD835C2B136A8D00C192D5 /* HideKeyboardExtension.swift */; };
 		65F2CC992B134B70006D25E6 /* DevnoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F2CC982B134B70006D25E6 /* DevnoteApp.swift */; };
 		65F2CC9B2B134B70006D25E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F2CC9A2B134B70006D25E6 /* ContentView.swift */; };
 		65F2CC9D2B134B71006D25E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F2CC9C2B134B71006D25E6 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65CD835C2B136A8D00C192D5 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		65F2CC952B134B70006D25E6 /* Devnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devnote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F2CC982B134B70006D25E6 /* DevnoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevnoteApp.swift; sourceTree = "<group>"; };
 		65F2CC9A2B134B70006D25E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		65F2CCB32B134CD4006D25E6 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				65CD835C2B136A8D00C192D5 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			files = (
 				65F2CCA22B134B71006D25E6 /* Persistence.swift in Sources */,
 				65F2CCA52B134B71006D25E6 /* Devnote.xcdatamodeld in Sources */,
+				65CD835D2B136A8D00C192D5 /* HideKeyboardExtension.swift in Sources */,
 				65F2CCBE2B13575C006D25E6 /* Constant.swift in Sources */,
 				65F2CC9B2B134B70006D25E6 /* ContentView.swift in Sources */,
 				65F2CC992B134B70006D25E6 /* DevnoteApp.swift in Sources */,
