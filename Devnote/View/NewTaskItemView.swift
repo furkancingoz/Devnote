@@ -10,7 +10,7 @@ import SwiftUI
 struct NewTaskItemView: View {
   @Environment(\.managedObjectContext) private var viewContext
   @State private var task: String =  ""
-
+  @Binding var isShowing: Bool
   private var isButtonDisabled: Bool {
     task.isEmpty
   }
@@ -32,6 +32,7 @@ struct NewTaskItemView: View {
       }
       task = ""
       hideKeyboard()
+      isShowing = false
     }
   }
     var body: some View {
@@ -75,6 +76,6 @@ struct NewTaskItemView: View {
 }
 
 #Preview {
-    NewTaskItemView()
+  NewTaskItemView(isShowing: .constant(true))
     .background(Color.gray.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
 }
