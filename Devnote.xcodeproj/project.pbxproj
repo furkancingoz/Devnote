@@ -29,7 +29,7 @@
 		65CD83662B137A5200C192D5 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
 		65CD83682B1387E300C192D5 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 		65F2CC952B134B70006D25E6 /* Devnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devnote.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65F2CC982B134B70006D25E6 /* DevnoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevnoteApp.swift; sourceTree = "<group>"; };
+		65F2CC982B134B70006D25E6 /* DevnoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DevnoteApp.swift; path = ../App/DevnoteApp.swift; sourceTree = "<group>"; };
 		65F2CC9A2B134B70006D25E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65F2CC9C2B134B71006D25E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65F2CC9F2B134B71006D25E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };

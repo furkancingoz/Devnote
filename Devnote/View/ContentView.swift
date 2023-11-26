@@ -13,7 +13,7 @@ struct ContentView: View {
   //MARK: - PROPERTY
   @State var task = ""
   @State private var showNewTaskItem: Bool = false
-
+  @AppStorage("isDarkMode") private var isDarkMode: Bool = false
 
   //MARK FETCHING DATA
   @Environment(\.managedObjectContext) private var viewContext
@@ -48,12 +48,42 @@ struct ContentView: View {
         //MARK: - MAIN VIEW
         VStack {
           //MARK: - HEADER
+          HStack(spacing: 10) {
+            //TITLE
+
+            Text("Devnote")
+              .font(.system(.largeTitle,design: .rounded))
+              .fontWeight(.heavy)
+              .padding(.leading,4)
+            Spacer()
+
+            //EDIT BUTTON
+            EditButton()
+              .font(.system(size: 16,weight: .semibold,design: .rounded))
+              .padding(.horizontal,10)
+              .frame(minWidth: 70,minHeight: 24)
+              .background(
+                Capsule().stroke(Color.white,lineWidth: 2)
+              )
+            //APPEARNCE BUTTON
+            Button(action: {
+              isDarkMode.toggle()
+            }, label: {
+              Image(systemName: isDarkMode ? "moon.circle.fill" :"moon.circle")
+                .resizable()
+                .frame(width: 24,height: 24)
+                .font(.system(.title,design: .rounded))
+            })
+
+          }// header hstack
+          .padding()
+          .foregroundColor(.white)
           Spacer(minLength: 80)
           //MARK: - NEW TASK BUTTON
           Button(action:  {
             showNewTaskItem = true
           }, label: {
-          Image(systemName: "plus.circle")
+            Image(systemName: "plus.circle")
               .font(.system(size: 30,weight: .semibold, design: .rounded))
             Text("New Task")
               .font(.system(size: 24,weight: .bold,design: .rounded))
@@ -100,11 +130,7 @@ struct ContentView: View {
       }     //: ZSTACK
       .scrollContentBackground(.hidden)
       .navigationTitle("Daily Task").navigationBarTitleDisplayMode(.large)
-      .toolbar {
-        ToolbarItem(placement: .navigationBarTrailing) {
-          EditButton()
-        }
-      }//: toolbar
+      .navigationBarHidden(true)
       .background(
         BackgroundImageView()
       )
