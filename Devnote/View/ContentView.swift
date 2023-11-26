@@ -101,16 +101,9 @@ struct ContentView: View {
 
           List {
             ForEach(items) { item in
-              VStack(alignment:.leading) {
-                Text(item.task ?? "")
-                  .font(.headline)
-                  .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                  .font(.footnote)
-                  .foregroundColor(.gray)
-              }// list item
-            }.onDelete(perform: deleteItems)
-          }
+             ListRowItemView(item: item)
+              }.onDelete(perform: deleteItems)
+            }
           .listStyle(InsetGroupedListStyle())
           .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3),radius: 12)
           .padding(.vertical,0)
