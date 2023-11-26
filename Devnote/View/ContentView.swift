@@ -4,7 +4,7 @@
 //
 //  Created by Furkan Cingöz on 26.11.2023.
 //
-
+// % 90
 import SwiftUI
 import CoreData
 
